@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  gap: 0 65px;
+}
+
+.header__itemns {
+  display: flex;
+  flex-direction: row;
+  gap: 0 58px;
+};
+
+.header__link {
+  font-size: 1.6rem;
+  font-family: 'Roboto';
+  color: $color-nav;
+  transition: 0.3s ease-in-out
+};
+
+.header__link__active {
+  color: $color-btn;
+};
+
+
+
+
