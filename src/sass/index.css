@@ -11,6 +11,22 @@
   transition: 0.3s ease-in-out;
 }
 
+.gallery__itemn:hover .gallery__img {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  filter: brightness(25%);
+}
+
+.gallery__itemn:hover .gallery__desk {
+  margin-top: -15%;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery__btn:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #4B9200;
+}
+
 .header {
   padding: 15px 0px 13px 0px;
   background-color: #000000;
@@ -117,18 +133,6 @@
   justify-content: flex-end;
 }
 
-.btn {
-  width: 298px;
-  padding: 20px 0px;
-  background-color: #F9804B;
-  color: #ffffff;
-  font-family: "Roboto";
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  border-radius: 30px;
-  border: none;
-}
-
 .backstage {
   display: flex;
   flex-direction: row;
@@ -177,6 +181,148 @@
 
 .backstage__text_desk {
   margin-top: 35px;
+}
+
+.gallery {
+  position: relative;
+  padding: 7.4% 0 0 0;
+}
+
+.gallery__itemns {
+  display: grid;
+  margin: 0 0 17% 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 30px;
+}
+
+.gallery__itemn {
+  position: relative;
+  max-width: 366px;
+  width: 366px;
+  border-radius: 5px;
+  border: 1px solid #F9804B;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery__img {
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery__desk {
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  position: absolute;
+  padding: 10px 10px 10px 10px;
+  flex-direction: row;
+  background-color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery__inf {
+  width: 294px;
+}
+
+.gallery__title {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.gallery__text {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 18px;
+}
+
+.gallery__pic {
+  width: 37px;
+  height: 37px;
+  background-size: 37px 37px;
+}
+.gallery__pic_banana {
+  background-image: url("../../src/img/icon-slaider/banana-bamboo.svg");
+}
+.gallery__pic_fish {
+  background-image: url("../../src/img/icon-slaider/meet-fish.svg");
+}
+
+.gallery__btns {
+  max-width: 87%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: -39.5% 0 0 -5.4%;
+}
+
+.gallery__btn {
+  border-radius: 50%;
+  background-color: #F9804B;
+  width: 62px;
+  height: 62px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.gallery__btn_left {
+  background-image: url("../../src/img/icons/Vector-pref.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.gallery__btn_right {
+  background-image: url("../../src/img/icons/Vector-next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery__button {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery__backraund {
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  margin: -23% 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.gallery__backraund_img_right {
+  width: 292px;
+  height: 460px;
+  background-size: cover;
+  background-image: url("../../src/img/flowers/palm_foto.svg");
+  background-repeat: no-repeat;
+}
+
+.gallery__backraund_img_left {
+  width: 368px;
+  height: 275px;
+  background-size: cover;
+  background-image: url("../../src/img/flowers/strelitzia.svg");
+  background-repeat: no-repeat;
+}
+
+.btn {
+  width: 298px;
+  padding: 20px 0px;
+  background-color: #F9804B;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: none;
 }
 
 html {
