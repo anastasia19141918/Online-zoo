@@ -286,33 +286,6 @@
   justify-content: center;
 }
 
-.gallery__backraund {
-  max-width: 100%;
-  width: 100%;
-  position: absolute;
-  margin: -23% 0 0 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.gallery__backraund_img_right {
-  width: 292px;
-  height: 460px;
-  background-size: cover;
-  background-image: url("../../src/img/flowers/palm_foto.svg");
-  background-repeat: no-repeat;
-}
-
-.gallery__backraund_img_left {
-  width: 368px;
-  height: 275px;
-  background-size: cover;
-  background-image: url("../../src/img/flowers/strelitzia.svg");
-  background-repeat: no-repeat;
-}
-
 .btn {
   width: 298px;
   padding: 20px 0px;
