@@ -129,6 +129,56 @@
   border: none;
 }
 
+.backstage {
+  display: flex;
+  flex-direction: row;
+}
+
+.backstage__wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 70px 0px 0px 125px;
+  gap: 0 85px;
+}
+
+.backstage__flowers {
+  width: 125px;
+  height: 612px;
+  background-size: cover;
+  background-image: url("../../src/img/flowers/flower_foto1.png");
+  background-repeat: no-repeat;
+}
+
+.backstage__img {
+  height: 403px;
+}
+
+.backstage__title {
+  width: 465px;
+  margin-bottom: 23px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 57px;
+}
+
+.backstage__text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 20.8px;
+}
+
+.backstage__text_big {
+  margin-top: 55px;
+  line-height: 28.8px;
+  font-size: 2.4rem;
+}
+
+.backstage__text_desk {
+  margin-top: 35px;
+}
+
 html {
   font-size: 10px;
 }
@@ -146,7 +196,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
+h1, h2, h3, p {
   margin: 0;
 }
 
