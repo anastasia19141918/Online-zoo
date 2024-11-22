@@ -27,6 +27,12 @@
   background-color: #4B9200;
 }
 
+.form__btn:hover {
+  border: 2px solid #4B9200;
+  color: #4B9200;
+  transition: 0.4s ease-in-out;
+}
+
 .header {
   padding: 15px 0px 13px 0px;
   background-color: #000000;
@@ -64,6 +70,70 @@
 .wrapper {
   max-width: 1080px;
   margin: auto;
+}
+
+.footer {
+  padding: 2.7% 0 4% 0;
+  background-color: #000000;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: row;
+  gap: 0 66%;
+}
+
+.footer__valid-title {
+  margin-bottom: 15px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__valid {
+  display: flex;
+  flex-direction: row;
+  gap: 0 10px;
+}
+
+.form__email {
+  padding: 5px 20px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 22px;
+  color: #ffffff;
+  background-color: transparent;
+  transition: 0.4s ease-in-out;
+}
+
+.form__btn {
+  padding: 10px 40px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 22px;
+  color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+}
+
+input:invalid {
+  border: 2px solid #D31414;
+  transition: 0.4s ease-in-out;
+}
+
+input:invalid:placeholder-shown {
+  border: 2px solid #F9804B;
 }
 
 .nav {
@@ -436,7 +506,7 @@
 }
 
 .testimonials {
-  padding: 12% 0 5% 0;
+  padding: 12% 0 11.6% 0;
 }
 
 .testimonials__title {
@@ -520,7 +590,7 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 115px;
   background-color: #F9804B;
-  height: 6px;
+  height: 8px;
   border-radius: 10px;
 }
 

@@ -1,0 +1,65 @@
+.footer {
+  padding: 2.7% 0 4% 0;
+  background-color: $color-header-footer;
+};
+
+.footer__logo {
+  display: flex;
+  flex-direction: row;
+  gap: 0 66%;
+};
+
+.footer__valid-title {
+  margin-bottom: 15px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 28px;
+  color: $color-nav;
+}; 
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+};
+
+.footer__valid {
+  display: flex;
+  flex-direction: row;
+  gap: 0 10px;
+}
+
+.form__email {
+  padding: 5px 20px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 22px;
+  color: $color-nav;
+  background-color: transparent;
+  
+  transition: 0.4s ease-in-out;
+};
+
+.form__btn {
+  padding: 10px 40px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 22px;
+  color: $color-nav;
+  color: $color-header-footer;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+};
+
+input:invalid {
+  border: 2px solid $color-not-valid;
+  transition: 0.4s ease-in-out;
+};
+
+input:invalid:placeholder-shown {
+  border: 2px solid $color-btn;
+}
+
