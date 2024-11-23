@@ -33,6 +33,16 @@
   transition: 0.4s ease-in-out;
 }
 
+.footer__icon:hover {
+  transition: 0.5s ease-in-out;
+  background-color: #F9804B;
+}
+
+.footer__link:hover {
+  color: #F9804B;
+  transition: 0.5s ease-in-out;
+}
+
 .header {
   padding: 15px 0px 13px 0px;
   background-color: #000000;
@@ -80,6 +90,7 @@
 .footer__logo {
   display: flex;
   flex-direction: row;
+  margin-bottom: 30px;
   gap: 0 66%;
 }
 
@@ -134,6 +145,85 @@ input:invalid {
 
 input:invalid:placeholder-shown {
   border: 2px solid #F9804B;
+}
+
+.footer__button {
+  margin-bottom: 40px;
+}
+
+.footer__btn {
+  color: #ffffff;
+}
+
+.footer__media {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 0 27%;
+}
+
+.footer__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 0px 10px;
+}
+
+.footer__icon {
+  width: 26px;
+  height: 26px;
+  background-color: #767474;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+  transition: 0.5s ease-in-out;
+}
+.footer__icon_fs {
+  background-image: url("../../src/img/footer/fs.svg");
+}
+.footer__icon_tw {
+  background-image: url("../../src/img/footer/tw.svg");
+}
+.footer__icon_ins {
+  background-image: url("../../src/img/footer/inst.svg");
+}
+.footer__icon_youTube {
+  background-image: url("../../src/img/footer/YouTube.svg");
+}
+
+.footer__media-links {
+  display: flex;
+  flex-direction: row;
+  gap: 0 85px;
+}
+
+.footer__link {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 22px;
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+
+.footer__inf {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__desk {
+  font-family: "Roboto";
+  font-weight: 100;
+  font-size: 1.6rem;
+  line-height: 20px;
+  color: #ffffff;
 }
 
 .nav {
@@ -592,6 +682,18 @@ input[type=range]::-webkit-slider-thumb {
   background-color: #F9804B;
   height: 8px;
   border-radius: 10px;
+}
+
+.footer__media-link {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer__itemns {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 0 58px;
 }
 
 html {

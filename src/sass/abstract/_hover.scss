@@ -23,4 +23,14 @@
   border: 2px solid $color-active-btn;
   color: $color-active-btn;
   transition: 0.4s ease-in-out;
+};
+
+.footer__icon:hover {
+  transition: 0.5s ease-in-out;
+  background-color: $color-btn;
+};
+
+.footer__link:hover {
+  color: $color-btn;
+  transition: 0.5s ease-in-out;
 }
