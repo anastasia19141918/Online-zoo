@@ -1,0 +1,36 @@
+.header__link:hover {
+  color: $color-btn;
+  transition: 0.3s ease-in-out;
+};
+
+.gallery__itemn:hover .gallery__img {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  filter: brightness(25%)
+};
+
+.gallery__itemn:hover .gallery__desk {
+  margin-top: -15%;
+  transition: 0.3s ease-in-out;
+};
+
+.gallery__btn:hover {
+  transition: 0.3s ease-in-out;
+  background-color: $color-active-btn;
+};
+
+.form__btn:hover {
+  border: 2px solid $color-active-btn;
+  color: $color-active-btn;
+  transition: 0.4s ease-in-out;
+};
+
+.footer__icon:hover {
+  transition: 0.5s ease-in-out;
+  background-color: $color-btn;
+};
+
+.footer__link:hover {
+  color: $color-btn;
+  transition: 0.5s ease-in-out;
+}

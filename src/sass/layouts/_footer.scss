@@ -1,0 +1,147 @@
+.footer {
+  padding: 2.7% 0 4% 0;
+  background-color: $color-header-footer;
+};
+
+.footer__logo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  gap: 0 66%;
+};
+
+.footer__valid-title {
+  margin-bottom: 15px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 28px;
+  color: $color-nav;
+}; 
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+};
+
+.footer__valid {
+  display: flex;
+  flex-direction: row;
+  gap: 0 10px;
+}
+
+.form__email {
+  padding: 5px 20px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 22px;
+  color: $color-nav;
+  background-color: transparent;
+  
+  transition: 0.4s ease-in-out;
+};
+
+.form__btn {
+  padding: 10px 40px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 22px;
+  color: $color-nav;
+  color: $color-header-footer;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+};
+
+input:invalid {
+  border: 2px solid $color-not-valid;
+  transition: 0.4s ease-in-out;
+};
+
+input:invalid:placeholder-shown {
+  border: 2px solid $color-btn;
+};
+
+.footer__button {
+  margin-bottom: 40px;
+}
+
+.footer__btn {
+  color: $color-nav;
+};
+
+.footer__media {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 0 27%;
+}
+
+.footer__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  align-items:flex-end;
+  gap: 0px 10px;
+}
+
+.footer__icon {
+  width: 26px;
+  height: 26px;
+  background-color: $color-btn-default;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+  transition: 0.5s ease-in-out;
+  &_fs {
+    background-image: url('../../src/img/footer/fs.svg');
+  };
+  &_tw {
+    background-image: url('../../src/img/footer/tw.svg');
+  };
+  &_ins {
+    background-image: url('../../src/img/footer/inst.svg');
+  };
+  &_youTube {
+    background-image: url('../../src/img/footer/YouTube.svg');
+  };
+};
+
+.footer__media-links {
+  display: flex;
+  flex-direction: row;
+  gap: 0 85px;
+}
+
+.footer__link {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 22px;
+  color: $color-nav;
+  transition: 0.5s ease-in-out;
+};
+
+.footer__inf {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__desk {
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 1.6rem;
+  line-height: 20px;
+  color: $color-nav;
+}
+
+
+
