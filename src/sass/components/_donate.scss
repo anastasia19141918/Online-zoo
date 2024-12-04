@@ -1,0 +1,180 @@
+.donate {
+  padding: 2.4% 0 2% 0;
+  background-color: $color-block-charity-gradient;
+};
+
+.donate__title {
+  margin-bottom: 10px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 3.3rem;
+  line-height: 46px;
+  color: $color-nav;
+};
+
+.donate__text {
+  margin-bottom: 46px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 22px;
+  color: $color-nav;
+};
+
+.donate__title-information {
+  margin-bottom: 5.8%;
+  color: $color-btn;
+};
+
+.donate__block {
+  max-width: 100%;
+  padding: 37px 90px 50px;
+  background-color: $color-gradient;
+  border-radius: 20px;
+};
+
+.donate__block-title {
+  margin-bottom: 25px;
+  text-align: center;
+  color: $color-btn;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 4.3rem;
+  line-height: 57px;
+};
+
+.donate__block-text {
+  margin-bottom: 7%;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 28px;
+};
+
+.donate__block-animal {
+  display: flex;
+  margin-bottom: 5%;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0 30px;
+};
+
+.donate__block-diet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+};
+
+.donate__block-imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0 30px;
+};
+
+.donate__block-desk {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 57px;
+  color: $color-form-default;
+};
+
+.donate__block-numbers {
+  color: $color-header-footer;
+  font-size: 7.2rem;
+};
+
+//input
+
+.donate__form_input {
+  margin: 0 0 3% 0;
+  text-align: center;
+}
+
+.form_input {
+  min-width: 268px;
+  min-height: 54px;
+  padding: 0 10px;
+  background-image: url('../../src/img/donate-bg/Vector.png');
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: $color-btn-default;
+};
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+};
+
+//input radio
+
+.donate__form_radio {
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: center;
+};
+
+.donate__form_radio_itemns {
+  display: flex;
+  flex-direction: row;
+  gap: 0 60px;
+};
+
+.donate__form_radio_el {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 22px;
+  color: $color-form-default;
+};
+
+.radio {
+  position: relative;
+  
+  height: 15px;
+  width: 15px;
+  
+  border-radius: 50%;
+  border: 2px solid $color-btn;
+  margin: -15px 0 0 -25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+};
+
+.radio:checked {
+  background-color: $color-btn;
+};
+
+.donate__link {
+  color: $color-nav;
+};
+
+.donate__btn {
+  text-align: center;
+};
+
+.donate__button {
+  margin: 0 0 30px 0;
+}
+
+.donate__btn-text {
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 22px;
+  color: $color-form-default;
+}
+
+
+
