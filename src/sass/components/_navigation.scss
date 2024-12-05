@@ -32,6 +32,9 @@
     
     transform: translateX(-100%);
     transition: 0.3s ease-in-out;
+  };
+  @include  mobale {
+    height: 60vh
   }
 };
 
@@ -55,6 +58,9 @@
   @include tablet {
     font-size: 1.9rem;
     color: $color-header-footer;
+  };
+  @include  mobale {
+    font-size: 1.5rem;
   }
 };
 

@@ -284,6 +284,11 @@ input:invalid:placeholder-shown {
     transition: 0.3s ease-in-out;
   }
 }
+@media (max-width: 320px) {
+  .header__itemns {
+    height: 60vh;
+  }
+}
 
 .header__itemns__active {
   transform: translateX(0);
@@ -309,6 +314,11 @@ input:invalid:placeholder-shown {
   .header__link {
     font-size: 1.9rem;
     color: #000000;
+  }
+}
+@media (max-width: 320px) {
+  .header__link {
+    font-size: 1.5rem;
   }
 }
 

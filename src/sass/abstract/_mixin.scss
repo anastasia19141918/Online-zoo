@@ -5,3 +5,7 @@
 @mixin tablet {
   @media (max-width: $tablet) {@content;}
 };
+
+@mixin mobale {
+  @media (max-width: $mobale) {@content;}
+};
