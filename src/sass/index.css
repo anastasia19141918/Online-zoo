@@ -44,8 +44,13 @@
 }
 
 .header {
-  padding: 15px 0px 13px 0px;
+  padding: 15px 10px 13px 10px;
   background-color: #000000;
+}
+@media (max-width: 640px) {
+  .header {
+    padding: 3px 5px 3px 5px;
+  }
 }
 
 .header__wrapper {
@@ -65,10 +70,22 @@
   background-image: url("../../src/img/logo/logo_footer.svg");
   cursor: pointer;
 }
+@media (max-width: 640px) {
+  .header__logo-img {
+    width: 46px;
+    height: 29px;
+    background-size: 46px 29px;
+  }
+}
 
 .header__designed {
   max-width: 105px;
   width: 100%;
+}
+@media (max-width: 640px) {
+  .header__designed {
+    display: none;
+  }
 }
 
 .header__link {
@@ -233,11 +250,53 @@ input:invalid:placeholder-shown {
   align-content: center;
   gap: 0 65px;
 }
+@media (max-width: 1000px) {
+  .nav {
+    gap: 0 45px;
+  }
+}
 
 .header__itemns {
   display: flex;
   flex-direction: row;
   gap: 0 58px;
+}
+@media (max-width: 1000px) {
+  .header__itemns {
+    gap: 0 20px;
+  }
+}
+@media (max-width: 640px) {
+  .header__itemns {
+    position: absolute;
+    width: 50%;
+    height: 80vh;
+    top: 5.5%;
+    left: 0;
+    padding: 0 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px 0;
+    background-color: #ffffff;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.header__itemns__active {
+  transform: translateX(0);
+  transition: 0.3s ease-in-out;
+}
+
+.header__itemn_media {
+  display: none;
+}
+@media (max-width: 640px) {
+  .header__itemn_media {
+    display: block;
+  }
 }
 
 .header__link {
@@ -246,9 +305,20 @@ input:invalid:placeholder-shown {
   color: #ffffff;
   transition: 0.3s ease-in-out;
 }
+@media (max-width: 640px) {
+  .header__link {
+    font-size: 1.9rem;
+    color: #000000;
+  }
+}
 
 .header__link__active {
   color: #F9804B;
+}
+@media (max-width: 640px) {
+  .header__link__active {
+    color: #000000;
+  }
 }
 
 .favorite {
@@ -1007,6 +1077,50 @@ input[type=number]::-webkit-outer-spin-button {
   background-position: center;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+}
+
+.menu-burger {
+  display: none;
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+@media (max-width: 640px) {
+  .menu-burger {
+    display: block;
+  }
+}
+
+.menu-burger_line {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 4px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+.menu-burger_first {
+  transform: translateY(-5px);
+}
+
+.menu-burger_third {
+  transform: translateY(5px);
+}
+
+.menu-burger_active .menu-burger_first {
+  transform: translateY(5px) rotate(-45deg);
+}
+
+.menu-burger_active .menu-burger_second {
+  opacity: 0;
+}
+
+.menu-burger_active .menu-burger_third {
+  transform: translateY(5px) rotate(45deg);
 }
 
 html {
