@@ -8,6 +8,9 @@
   text-transform: uppercase;
   border-radius: 30px;
   border: none;
+  @include mobale-small {
+    width: 220px;
+  }
 };
 
 .button {

@@ -1,11 +1,47 @@
+@mixin desktop-big {
+  @media (max-width: $desktop-big) {@content;}
+};
+
 @mixin desktop {
   @media (max-width: $desktop) {@content;}
+};
+
+@mixin desktop-small {
+  @media (max-width: $desktop-small) {@content;}
+};
+
+@mixin tablet-big {
+  @media (max-width: $tablet-big) {@content;}
 };
 
 @mixin tablet {
   @media (max-width: $tablet) {@content;}
 };
 
+@mixin tablet-small {
+  @media (max-width: $tablet-small) {@content;}
+};
+
+@mixin mobale-big {
+  @media (max-width: $mobale-big) {@content;}
+};
+
+@mixin mobale-big-favorite {
+  @media (max-width: $mobale-big-favorite) {@content;}
+};
+
+@mixin mobale-small-favorite {
+  @media (max-width: $mobale-small-favorite) {@content;}
+};
+
+@mixin mobale-section-favorite {
+  @media (max-width: $mobale-section-favorite) {@content;}
+};
+
 @mixin mobale {
   @media (max-width: $mobale) {@content;}
+};
+
+@mixin mobale-small {
+  @media (max-width: $mobale-small) {@content;}
 };
