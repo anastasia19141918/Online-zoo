@@ -1,6 +1,9 @@
 .header {
-  padding: 15px 0px 13px 0px;
+  padding: 15px 10px 13px 10px;
   background-color: $color-header-footer;
+  @include tablet {
+    padding: 3px 5px 3px 5px;
+  }
 }
 
 .header__wrapper {
@@ -20,11 +23,19 @@
   background-image: url('../../src/img/logo/logo_footer.svg');
 
   cursor: pointer;
+  @include tablet {
+    width: 46px;
+    height: 29px;
+    background-size: 46px 29px;
+  }
 };
 
 .header__designed {
   max-width: 105px;
   width: 100%;
+  @include tablet {
+    display: none;
+  }
 };
 
 .header__link {

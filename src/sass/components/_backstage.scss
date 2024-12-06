@@ -8,6 +8,30 @@
   flex-direction: row;
   padding: 70px 0px 0px 125px;
   gap: 0 85px;
+  @include desktop-bg {
+    padding: 70px 10px 10px 0px;
+    gap: 0 40px;
+  };
+  @include desktop-bg-small {
+    gap: 0 20px;
+  };
+  @include desktop {
+    padding: 0 10px;
+  };
+  @include tablet {
+    padding: 0px 20px 10px 20px;
+    margin: 65px 0 0 0;
+  };
+  @include tablet-small {
+    margin: 20% 0 0 0;
+  };
+  @include mobale-small-favorite {
+    margin: 30% 0 0 0;
+  };
+  @include mobale-small-favorite {
+    padding: 0px 5px 10px 5px;
+    margin: 33% 0 0 0;
+  }
 };
 
 .backstage__flowers {
@@ -17,10 +41,32 @@
   background-size: cover;
   background-image: url('../../src/img/flowers/flower_foto1.png');
   background-repeat: no-repeat;
+  @include desktop-bg {
+    display: none;
+  };
+  @include desktop {
+    display: block;
+  };
+  @include tablet-small {
+    margin-left: -20px;
+  };
+  @include tablet {
+    margin-left: 50px;
+  };
+  @include mobale-small-favorite {
+    display: none;
+  }
 };
 
 .backstage__img {
   height: 403px;
+  @include desktop-bg-small {
+    width: 500px;
+    height: 408px;
+  };
+  @include desktop {
+    display: none;
+  }
 };
 
 .backstage__title {
@@ -30,6 +76,17 @@
   font-weight: 400;
   font-size: 4.8rem;
   line-height: 57px;
+  @include desktop {
+    width: 454px;
+  };
+  @include mobale-big {
+    width: 300px;
+    font-size: 2.4rem;
+    line-height: 28px;
+  };
+  @include mobale-small-favorite {
+    margin-bottom: 12px;
+  }
 };
 
 .backstage__text {
@@ -37,14 +94,39 @@
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 20.8px;
+  @include desktop {
+    max-width: 454px;
+  };
+  @include mobale-big {
+    width: 297px;
+  };
+  @include mobale-small {
+    max-width: 255px;
+    font-size: 1.3rem;
+  }
 };
 
 .backstage__text_big {
   margin-top: 55px;
   line-height: 28.8px;
   font-size: 2.4rem;
+  @include tablet {
+    margin-top: 30px;
+  };
+  @include mobale-small-favorite {
+    width: 213px;
+  };
+  @include mobale-small-favorite {
+    margin-top: 20px;
+  }
 };
 
 .backstage__text_desk {
   margin-top: 35px;
+  @include tablet {
+    margin-top: 20px;
+  };
+  @include mobale-small-favorite {
+    margin-top: 10px;
+  }
 }

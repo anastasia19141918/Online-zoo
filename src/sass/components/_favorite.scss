@@ -3,11 +3,50 @@
   background-image: url('../../src/img/favorite/favorite_bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  @include tablet {
+    padding: 0 0 37px 0;
+  };
+  @include tablet-small {
+    padding: 0 0 43px 0;
+  };
+  @include mobale {
+    padding: 0 0 70px 0;
+  }
 };
 
 .favorite__desk {
   padding: 1% 0 0 54.4%;
   margin-bottom: 35px;
+  @include desktop-big {
+    padding: 1% 0 0 34.4%;
+    margin-bottom: 55px;
+  };
+  @include desktop-small {
+    padding: 2% 0 0 14.4%;
+  };
+  @include tablet {
+    margin-bottom: -15px;
+    padding: 1% 0 0 53%;
+  };
+  @include tablet-small {
+    padding: 1% 0 0 73%;
+  };
+  @include mobale-big {
+    padding: 1% 0 0 60%;
+  };
+  @include mobale-big-favorite {
+    padding: 1% 0 0 50%;
+  };
+  @include mobale-small-favorite {
+    padding: 1% 0 0 45%;
+  };
+  @include mobale-section-favorite {
+    padding: 1% 0 0 42%;
+  };
+  @include mobale {
+    padding: 3% 0 0 42%;
+  }
+
 }
 
 .favorite__circle {
@@ -15,6 +54,14 @@
   height: 465px;
   border-radius: 50%;
   background-color: $color-btn;
+  @include tablet-big {
+    width: 237px;
+    height: 237px;
+  };
+  @include tablet-small {
+    width: 128px;
+    height: 128px;
+  }
 };
 
 .favorite__title {
@@ -28,6 +75,29 @@
   line-height: 95%;
   color: $color-nav;
   text-transform: uppercase;
+  @include desktop-big {
+    margin-top: -67%
+  };
+  @include desktop-small {
+    margin-top: -60%
+  };
+  @include tablet-big {
+    max-width: 255px;
+    font-size: 5.4rem;
+    margin-top: -40%;
+    margin-left: 10%;
+  };
+  @include tablet {
+    margin-top: -70%;
+    margin-left: 10%;
+    line-height: 80%;
+  };
+  @include tablet-small {
+    max-width: 128px;
+    margin-top: -65%;
+    margin-left: 5%;
+    font-size: 2.8rem;
+  }
 };
 
 .favorite__title__color {
@@ -39,5 +109,33 @@
   margin: 0 15px;
   display: flex;
   justify-content: flex-end;
+  @include desktop-big {
+    justify-content: center
+  };
+  @include tablet {
+    justify-content: flex-start;
+  };
+  @include tablet-small {
+    position: absolute;
+    margin: 13% 0 0 25%;
+  };
+  @include mobale-big {
+    margin: 13% 0 0 20%;
+  };
+  @include mobale-big-favorite {
+    margin: 13% 0 0 11%;
+  };
+  @include mobale-small-favorite {
+    margin: 13% 0 0 9%;
+  };
+  @include mobale-section-favorite {
+    margin: 15% 0 0 1%;
+  };
+  @include mobale {
+    margin: 27% 0 0 1%;
+  };
+  @include mobale-small {
+    margin: 27% 0 0 14%;
+  }
 };
 
