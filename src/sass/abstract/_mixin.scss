@@ -1,3 +1,11 @@
+@mixin desktop-bg {
+  @media (max-width: $desktop-bg) {@content;}
+};
+
+@mixin desktop-bg-small {
+  @media (max-width: $desktop-bg-small) {@content;}
+};
+
 @mixin desktop-big {
   @media (max-width: $desktop-big) {@content;}
 };
