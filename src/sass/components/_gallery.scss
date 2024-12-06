@@ -7,22 +7,52 @@
   display: grid;
   margin: 0 0 17% 0;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px 30px;
-}
+  gap: 30px 30px;
+  @include desktop-gallery {
+    margin: 0 0 26% 0;
+    padding: 0 15px;
+    gap: 30% 30px;
+  };
+  @include desktop-big {
+    margin: 0 0 10% 0;
+    grid-template-columns: repeat(2, 0.3fr);
+    justify-content: center;
+    gap: 5% 20%;
+  };
+  @include tablet-big-gallery {
+    margin: 0 0 15% 0;
+    gap: 5% 5%;
+  };
+  @include tablet-big {
+    gap: 2% 2%;
+  };
+  @include tablet-small {
+    grid-template-columns: repeat(1, 0.3fr);
+  };
+  @include mobale-small-favorite {
+    margin: 0 0 25% 0;
+  }
+};
 
 .gallery__itemn {
   position: relative;
   max-width: 366px;
-  width: 366px;
   border-radius: 5px;
   border: 1px solid $color-btn;
   cursor: pointer;
   overflow: hidden;
+  @include desktop-big {
+    width: 285px;
+  }
 };
 
 .gallery__img {
   border-radius: 5px;
   transition: 0.3s ease-in-out;
+  @include desktop-big {
+    width: 285px;
+    height: 285px;
+  }
 };
 
 .gallery__desk {
@@ -34,6 +64,9 @@
   flex-direction: row;
   background-color: $color-nav;
   transition: 0.3s ease-in-out;
+  @include desktop-bg {
+    padding: 1px 10px 10px 10px;
+  }
 };
 
 .gallery__inf {
@@ -69,18 +102,9 @@
 
 //gallery btn
 
-.gallery__btns {
-  max-width: 87%;
-  width: 100%;
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  
-  margin: -39.5% 0 0 -5.4%;
-};
-
 .gallery__btn {
+  position: absolute;
+  top: 38%;
   border-radius: 50%;
   background-color: $color-btn;
   width: 62px;
@@ -88,18 +112,79 @@
   transition: 0.3s ease-in-out;
   cursor: pointer;
   &_left {
+    left: 8%;
     background-image: url('../../src/img/icons/Vector-pref.svg');
     background-repeat: no-repeat;
     background-position: center;
+    @include desktop-gallery {
+      left: 45%;
+    };
+    @include desktop-big {
+      left: 43%;
+    };
+    @include desktop-small-gallery {
+      left: 41%;
+    };
+    @include tablet-small {
+      left: 10%;
+    };
+    @include mobale-small-gallery {
+      left: 1%;
+    };
+    @include mobale-small-favorite {
+      left: 20%;
+    }
   };
   &_right {
+    right: 9%;
     background-image: url('../../src/img/icons/Vector-next.svg');
     background-repeat: no-repeat;
     background-position: center;
+    @include desktop-gallery {
+      right: 40%;
+    };
+    @include desktop-big {
+      left: 50%;
+    };
+    @include desktop-small-gallery {
+      left: 51%;
+    };
+    @include tablet-small {
+      left: 79%;
+    };
+    @include mobale-small-gallery {
+      left: 85%;
+    };
+    @include  mobale-gallery {
+      left: 92%;
+    };
+    @include mobale-small-favorite {
+      left: 70%;
+    }
+  };
+  @include desktop-gallery {
+    top: 42%;
+  };
+  @include tablet-big-gallery {
+    top: 82%;
+  };
+  @include tablet-small-gallery {
+    top: 84%;
+  };
+  @include tablet-small {
+    top: 44%;
+  };
+  @include  mobale-gallery {
+    width: 30px;
+    height: 30px;
+  };
+  @include mobale-small-favorite {
+    top: 93.5%;
   }
 };
 
 .gallery__button {
+  position: relative;
   display: flex;
   justify-content: center;
 };

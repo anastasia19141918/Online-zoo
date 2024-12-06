@@ -2,6 +2,10 @@
   @media (max-width: $desktop-bg) {@content;}
 };
 
+@mixin desktop-gallery {
+  @media (max-width: $desktop-gallery) {@content;}
+};
+
 @mixin desktop-bg-small {
   @media (max-width: $desktop-bg-small) {@content;}
 };
@@ -14,8 +18,20 @@
   @media (max-width: $desktop) {@content;}
 };
 
+@mixin desktop-small-gallery {
+  @media (max-width: $desktop-small-gallery) {@content;}
+};
+
 @mixin desktop-small {
   @media (max-width: $desktop-small) {@content;}
+};
+
+@mixin tablet-big-gallery {
+  @media (max-width: $tablet-big-gallery) {@content;}
+};
+
+@mixin tablet-small-gallery {
+  @media (max-width: $tablet-small-gallery) {@content;}
 };
 
 @mixin tablet-big {
@@ -29,9 +45,16 @@
 @mixin tablet-small {
   @media (max-width: $tablet-small) {@content;}
 };
-
 @mixin mobale-big {
   @media (max-width: $mobale-big) {@content;}
+};
+
+@mixin mobale-gallery {
+  @media (max-width: $mobale-gallery) {@content;}
+};
+
+@mixin mobale-small-gallery {
+  @media (max-width: $mobale-small-gallery) {@content;}
 };
 
 @mixin mobale-big-favorite {

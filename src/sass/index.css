@@ -717,22 +717,68 @@ input:invalid:placeholder-shown {
   display: grid;
   margin: 0 0 17% 0;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px 30px;
+  gap: 30px 30px;
+}
+@media (max-width: 1525px) {
+  .gallery__itemns {
+    margin: 0 0 26% 0;
+    padding: 0 15px;
+    gap: 30% 30px;
+  }
+}
+@media (max-width: 1080px) {
+  .gallery__itemns {
+    margin: 0 0 10% 0;
+    grid-template-columns: repeat(2, 0.3fr);
+    justify-content: center;
+    gap: 5% 20%;
+  }
+}
+@media (max-width: 750px) {
+  .gallery__itemns {
+    margin: 0 0 15% 0;
+    gap: 5% 5%;
+  }
+}
+@media (max-width: 675px) {
+  .gallery__itemns {
+    gap: 2% 2%;
+  }
+}
+@media (max-width: 611px) {
+  .gallery__itemns {
+    grid-template-columns: repeat(1, 0.3fr);
+  }
+}
+@media (max-width: 385px) {
+  .gallery__itemns {
+    margin: 0 0 25% 0;
+  }
 }
 
 .gallery__itemn {
   position: relative;
   max-width: 366px;
-  width: 366px;
   border-radius: 5px;
   border: 1px solid #F9804B;
   cursor: pointer;
   overflow: hidden;
 }
+@media (max-width: 1080px) {
+  .gallery__itemn {
+    width: 285px;
+  }
+}
 
 .gallery__img {
   border-radius: 5px;
   transition: 0.3s ease-in-out;
+}
+@media (max-width: 1080px) {
+  .gallery__img {
+    width: 285px;
+    height: 285px;
+  }
 }
 
 .gallery__desk {
@@ -744,6 +790,11 @@ input:invalid:placeholder-shown {
   flex-direction: row;
   background-color: #ffffff;
   transition: 0.3s ease-in-out;
+}
+@media (max-width: 1600px) {
+  .gallery__desk {
+    padding: 1px 10px 10px 10px;
+  }
 }
 
 .gallery__inf {
@@ -777,17 +828,9 @@ input:invalid:placeholder-shown {
   background-image: url("../../src/img/icon-slaider/meet-fish.svg");
 }
 
-.gallery__btns {
-  max-width: 87%;
-  width: 100%;
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: -39.5% 0 0 -5.4%;
-}
-
 .gallery__btn {
+  position: absolute;
+  top: 38%;
   border-radius: 50%;
   background-color: #F9804B;
   width: 62px;
@@ -796,17 +839,116 @@ input:invalid:placeholder-shown {
   cursor: pointer;
 }
 .gallery__btn_left {
+  left: 8%;
   background-image: url("../../src/img/icons/Vector-pref.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (max-width: 1525px) {
+  .gallery__btn_left {
+    left: 45%;
+  }
+}
+@media (max-width: 1080px) {
+  .gallery__btn_left {
+    left: 43%;
+  }
+}
+@media (max-width: 940px) {
+  .gallery__btn_left {
+    left: 41%;
+  }
+}
+@media (max-width: 611px) {
+  .gallery__btn_left {
+    left: 10%;
+  }
+}
+@media (max-width: 550px) {
+  .gallery__btn_left {
+    left: 1%;
+  }
+}
+@media (max-width: 385px) {
+  .gallery__btn_left {
+    left: 20%;
+  }
+}
 .gallery__btn_right {
+  right: 9%;
   background-image: url("../../src/img/icons/Vector-next.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (max-width: 1525px) {
+  .gallery__btn_right {
+    right: 40%;
+  }
+}
+@media (max-width: 1080px) {
+  .gallery__btn_right {
+    left: 50%;
+  }
+}
+@media (max-width: 940px) {
+  .gallery__btn_right {
+    left: 51%;
+  }
+}
+@media (max-width: 611px) {
+  .gallery__btn_right {
+    left: 79%;
+  }
+}
+@media (max-width: 550px) {
+  .gallery__btn_right {
+    left: 85%;
+  }
+}
+@media (max-width: 440px) {
+  .gallery__btn_right {
+    left: 92%;
+  }
+}
+@media (max-width: 385px) {
+  .gallery__btn_right {
+    left: 70%;
+  }
+}
+@media (max-width: 1525px) {
+  .gallery__btn {
+    top: 42%;
+  }
+}
+@media (max-width: 750px) {
+  .gallery__btn {
+    top: 82%;
+  }
+}
+@media (max-width: 720px) {
+  .gallery__btn {
+    top: 84%;
+  }
+}
+@media (max-width: 611px) {
+  .gallery__btn {
+    top: 44%;
+  }
+}
+@media (max-width: 440px) {
+  .gallery__btn {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 385px) {
+  .gallery__btn {
+    top: 93.5%;
+  }
+}
 
 .gallery__button {
+  position: relative;
   display: flex;
   justify-content: center;
 }
