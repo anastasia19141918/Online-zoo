@@ -10,6 +10,10 @@
   @media (max-width: $desktop-bg-small) {@content;}
 };
 
+@mixin desktop-pay-small {
+  @media (max-width: $desktop-pay-small) {@content;}
+};
+
 @mixin desktop-big {
   @media (max-width: $desktop-big) {@content;}
 };
