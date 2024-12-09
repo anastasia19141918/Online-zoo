@@ -981,6 +981,11 @@ input:invalid:placeholder-shown {
   border-radius: 5px;
   border: none;
 }
+@media (max-width: 520px) {
+  .button {
+    width: 238px;
+  }
+}
 
 .pay {
   padding: 4.5% 0 5% 0;
@@ -1215,20 +1220,75 @@ input:invalid:placeholder-shown {
   color: #333B41;
 }
 
+.testimonials__content {
+  overflow-x: hidden;
+}
+@media (max-width: 1195px) {
+  .testimonials__content {
+    width: 69%;
+    margin-left: 15%;
+  }
+}
+@media (max-width: 1115px) {
+  .testimonials__content {
+    height: 630px;
+    padding: 0 0 30px 0;
+    overflow-y: hidden;
+  }
+}
+@media (max-width: 1080px) {
+  .testimonials__content {
+    height: 660px;
+  }
+}
+@media (max-width: 1000px) {
+  .testimonials__content {
+    height: 465px;
+  }
+}
+@media (max-width: 640px) {
+  .testimonials__content {
+    overflow-y: auto;
+    height: 100%;
+  }
+}
+
 .testimonials__itemns {
   display: flex;
   margin-bottom: 25px;
-  gap: 0 30px;
+  gap: 0 10px;
   justify-content: space-between;
+}
+@media (max-width: 1115px) {
+  .testimonials__itemns {
+    flex-direction: column;
+    gap: 20px 0px;
+  }
 }
 
 .testimonials__itemn {
-  max-width: 225px;
+  max-width: 220px;
   flex-shrink: 0;
   padding: 15px 20px 20px;
   background-color: #F1F3F2;
   border: 1px solid #FEBDAB;
   border-radius: 20px;
+}
+@media (max-width: 1195px) {
+  .testimonials__itemn {
+    max-width: 200px;
+  }
+}
+@media (max-width: 1115px) {
+  .testimonials__itemn {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .testimonials__itemn {
+    height: 109px;
+    overflow-y: hidden;
+  }
 }
 
 .testimonials__itemn-header {
@@ -1268,6 +1328,18 @@ input:invalid:placeholder-shown {
   color: #767474;
   overflow: hidden;
 }
+@media (max-width: 1195px) {
+  .testimonials__text {
+    max-height: 300px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1115px) {
+  .testimonials__button {
+    text-align: center;
+  }
+}
 
 input[type=range] {
   -webkit-appearance: none;
@@ -1280,6 +1352,16 @@ input[type=range] {
   background-color: #F1F3F2;
   border: 1px solid #FEBDAB;
   border-radius: 5px;
+}
+@media (max-width: 1115px) {
+  input[type=range] {
+    margin: 20px 0 27px 25%;
+  }
+}
+@media (max-width: 640px) {
+  input[type=range] {
+    display: none;
+  }
 }
 
 input[type=range]::-webkit-slider-thumb {

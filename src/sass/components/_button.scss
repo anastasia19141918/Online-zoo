@@ -23,4 +23,8 @@
   text-transform: uppercase;
   border-radius: 5px;
   border: none;
+  @include mobale-big {
+    width: 238px;
+  
+  }
 }
