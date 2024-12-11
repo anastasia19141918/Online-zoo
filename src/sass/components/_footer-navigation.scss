@@ -8,4 +8,28 @@
   flex-direction: row;
   align-items: flex-end;
   gap: 0 58px;
+  @include desktop-small {
+    gap: 0 38px;
+  };
+  @include mobale {
+    gap: 0 18px;
+  }
+};
+
+.header__link_footer {
+  font-size: 1.6rem;
+  font-family: 'Roboto';
+  color: $color-nav;
+  transition: 0.3s ease-in-out;
+  @include tablet {
+    font-size: 1.2rem;
+    
+  };
+  @include  mobale {
+    font-size: 1.1rem;
+  }
+};
+
+.header__link_footer_active {
+  color: $color-btn;
 }

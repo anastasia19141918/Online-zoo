@@ -1,5 +1,22 @@
 .donate__amount {
   margin: 0 0 11% 0;
+  @include tablet {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  };
+  @include mobale-footer {
+    margin: 0 0 11% 10%;
+  };
+  @include mobale-footer {
+    margin: 0 0 15% 10%;
+  };
+  @include mobale-gallery {
+    margin: 0 0 25% 5%;
+  };
+  @include mobale-section-favorite {
+    margin: 0 0 25% 4%;
+  }
 }
 
 .donate__amount-title {
@@ -13,7 +30,7 @@
 
 .donate__amount-itemns {
   position: relative;
-  max-width: 100%;
+  width: 100%; 
   display: flex;
   height: 27px;
   padding: 0px 0px;
@@ -21,15 +38,42 @@
   gap: 0 60px;
   background-color: $color-form-default;
   border-radius: 3px;
+  @include desktop {
+    width: 90%; 
+    gap: 0 40px;
+  };
+  @include desktop-small-gallery {
+    width: 100%;
+  };
+  @include tablet-small-footer {
+    width: 100%;
+    gap: 0 25px;
+  };
+  @include tablet {
+    width: 90%;
+    gap: 0 0px;
+  };
+  @include mobale-section-favorite {
+    width: 94%;
+  }
 };
 
 .donate__amount-itemns:before {
   content: "";
   position: absolute;
-  width: 850px;
+  width: 95%;
   height: 2px;
   margin: 15px 0 0 20px;
   background-color: $color-btn-default;
+  @include desktop-small-gallery {
+    width: 90%;
+  };
+  @include tablet {
+    width: 90%;
+  };
+  @include mobale-section-favorite {
+    width: 87%;
+  }
 };
 
 .donate__amount-itemn {
@@ -38,6 +82,10 @@
   flex-direction: column;
   align-items: center;
   flex: 0 1 8%;
+  @include desktop-small-gallery {
+    flex: 0 1 18%;
+  };
+  
 };
 
 .donate__amount-itemn:first-child {
@@ -98,6 +146,23 @@
   font-size: 2.6rem;
   line-height: 36px;
   transition: 0.2s ease-in-out;
+  @include desktop-small-gallery {
+    margin: 27px 0 0 55px;
+    font-size: 2.2rem;
+  };
+  @include tablet {
+    width: 20%;
+  };
+  @include mobale-footer {
+    margin: 27px 0 0 43px;
+  };
+  @include mobale-gallery {
+    margin: 27px 0 0 33px;
+    font-size: 1.6rem;
+  };
+  @include mobale-section-favorite {
+    margin: 27px 0 0 27px;
+  }
 };
 
 
@@ -130,6 +195,23 @@
   cursor: pointer;
   transition: 0.2s ease-in-out;
 };
+
+//media start
+
+.donate__amount-itemn_5000, .donate__amount-itemn_2000, .donate__amount-itemn_1000 {
+  @include desktop-small-gallery {
+    display: none;
+  }
+};
+
+.donate__amount-itemn_500 {
+  @include desktop-small-gallery {
+    margin-left: -6.5%;
+  }
+}
+
+
+//media end
 
 
 

@@ -10,6 +10,22 @@
   @media (max-width: $desktop-bg-small) {@content;}
 };
 
+@mixin desktop-pay-small {
+  @media (max-width: $desktop-pay-small) {@content;}
+};
+
+@mixin desktop-donate-small {
+  @media (max-width: $desktop-donate-small) {@content;}
+};
+
+@mixin desktop-testimonials-small {
+  @media (max-width: $desktop-testimonials-small) {@content;}
+};
+
+@mixin desktop-donate {
+  @media (max-width: $desktop-donate) {@content;}
+};
+
 @mixin desktop-big {
   @media (max-width: $desktop-big) {@content;}
 };
@@ -20,6 +36,10 @@
 
 @mixin desktop-small-gallery {
   @media (max-width: $desktop-small-gallery) {@content;}
+};
+
+@mixin tablet-small-footer {
+  @media (max-width: $tablet-small-footer) {@content;}
 };
 
 @mixin desktop-small {
@@ -34,6 +54,10 @@
   @media (max-width: $tablet-small-gallery) {@content;}
 };
 
+@mixin mobale-small-footer {
+  @media (max-width: $mobale-small-footer) {@content;}
+};
+
 @mixin tablet-big {
   @media (max-width: $tablet-big) {@content;}
 };
@@ -42,11 +66,19 @@
   @media (max-width: $tablet) {@content;}
 };
 
+@mixin tablet-footer {
+  @media (max-width: $tablet-footer) {@content;}
+};
+
 @mixin tablet-small {
   @media (max-width: $tablet-small) {@content;}
 };
 @mixin mobale-big {
   @media (max-width: $mobale-big) {@content;}
+};
+
+@mixin mobale-footer {
+  @media (max-width: $mobale-footer) {@content;}
 };
 
 @mixin mobale-gallery {

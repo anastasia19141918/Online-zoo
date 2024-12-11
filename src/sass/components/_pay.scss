@@ -9,6 +9,13 @@
   padding: 40px 0px;
   border-radius: 20px;
   background-color: $color-gradient;
+  @include desktop-pay-small {
+    max-width: calc(100% - 8.0rem);
+    padding: 40px 20px;
+  };
+  @include mobale {
+    max-width: calc(100% - 5.0rem);
+  }
 };
 
 .pay__title {
@@ -19,6 +26,14 @@
   font-size: 4.8rem;
   line-height: 57px;
   text-align: center;
+  @include tablet {
+    font-size: 4.2rem;
+  };
+  @include mobale {
+    max-width: 232px;
+    font-size: 2.4rem;
+    line-height: 28px;
+  }
 };
 
 .pay__text-block {
@@ -28,6 +43,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @include desktop-pay-small {
+    max-width: 100%;
+    padding: 0 0 0 0;
+  };
+  @include mobale {
+    margin-bottom: 10px;
+  }
 };
 
 .pay__text {
@@ -38,6 +60,15 @@
   font-weight: 400;
   font-size: 2.4rem;
   line-height: 28px;
+  @include tablet {
+    font-size: 2.2rem;
+  };
+  @include mobale {
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+    line-height: 21px;
+    text-align: center;
+  }
 };
 
 .pay__text-desk {
@@ -47,11 +78,20 @@
   color: $color-form-default;
   font-weight: 600;
   font-size: 1.6rem;
+  @include mobale {
+    display: none;
+  }
 };
 
 .pay__text-desk-present {
   width: 863px;
   font-weight: 400;
+  @include desktop-pay-small {
+    max-width: 100%;
+  };
+  @include mobale {
+    display: none;
+  };
 };
 
 .pay__link {
@@ -67,6 +107,10 @@
   font-size: 3.6rem;
   line-height: 46px;
   color: $color-form-default;
+  @include mobale {
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+  }
 };
 
 .pay__itemns {
@@ -76,6 +120,15 @@
   justify-content: center;
   align-items: center;
   gap: 0 30px;
+  @include tablet {
+    gap: 0 15px;
+  };
+  @include tablet-small {
+    flex-direction: column;
+  };
+  @include mobale {
+    margin-bottom: 30px;
+  }
 };
 
 .pay__img {
@@ -98,11 +151,13 @@
 
   &_animal {
     background-image: url('../../src/img/pay/monkey.svg');
-  }
+  };
+  
 };
 
 .pay__desk {
   max-width: 168px;
+  min-height: 46px;
   width: 100%;
   padding: 15px 0;
   text-align: left;
@@ -110,6 +165,9 @@
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 22px;
+  @include mobale {
+    padding: 10px 0;
+  }
 };
 
 .pay__arrow {
@@ -120,6 +178,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-position: center;
+  @include desktop-small-gallery {
+    display: none;
+  }
 };
 
 .pay__button {
