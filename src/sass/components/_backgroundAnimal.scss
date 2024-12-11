@@ -5,4 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 50%;
+  @include tablet {
+    background-position: 30% 50%;
+  }
 }

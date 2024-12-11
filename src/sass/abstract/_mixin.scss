@@ -14,8 +14,16 @@
   @media (max-width: $desktop-pay-small) {@content;}
 };
 
+@mixin desktop-donate-small {
+  @media (max-width: $desktop-donate-small) {@content;}
+};
+
 @mixin desktop-testimonials-small {
   @media (max-width: $desktop-testimonials-small) {@content;}
+};
+
+@mixin desktop-donate {
+  @media (max-width: $desktop-donate) {@content;}
 };
 
 @mixin desktop-big {
@@ -28,6 +36,10 @@
 
 @mixin desktop-small-gallery {
   @media (max-width: $desktop-small-gallery) {@content;}
+};
+
+@mixin tablet-small-footer {
+  @media (max-width: $tablet-small-footer) {@content;}
 };
 
 @mixin desktop-small {

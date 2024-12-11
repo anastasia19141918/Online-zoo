@@ -3,6 +3,10 @@
   background-color: $color-block-charity-gradient;
 };
 
+.wrapper__donate {
+  padding: 20px 20px;
+}
+
 .donate__title {
   margin-bottom: 10px;
   font-family: 'Roboto';
@@ -10,6 +14,10 @@
   font-size: 3.3rem;
   line-height: 46px;
   color: $color-nav;
+  @include tablet {
+    font-size: 2.4rem;
+    line-height: 22px;
+  }
 };
 
 .donate__text {
@@ -26,11 +34,28 @@
   color: $color-btn;
 };
 
+.donate__img-icon {
+  @include mobale-small-favorite {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+.donate__img {
+  @include tablet {
+    width: 160px;
+    height: 138px;
+  }
+};
+
 .donate__block {
   max-width: 100%;
   padding: 37px 90px 50px;
   background-color: $color-gradient;
   border-radius: 20px;
+  @include desktop-small-gallery {
+    padding: 37px 10px 50px;
+  }
 };
 
 .donate__block-title {
@@ -57,12 +82,27 @@
   flex-direction: row;
   justify-content: center;
   gap: 0 30px;
-};
+  @include mobale-gallery {
+    justify-content: space-between;
+  };
+  @include mobale-small-favorite {
+    gap: 0 5px;
+  }
+}
 
 .donate__block-diet {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @include tablet {
+    justify-content: flex-end;
+  };
+  @include mobale-small-favorite {
+    width: 129px;
+  };
+  @include mobale-section-favorite {
+    gap: 30px 0;
+  }
 };
 
 .donate__block-imgs {
@@ -71,6 +111,9 @@
   justify-content: center;
   align-items: center;
   gap: 0 30px;
+  @include mobale-gallery {
+    gap: 0 10px;
+  }
 };
 
 .donate__block-desk {
@@ -80,11 +123,20 @@
   font-weight: 500;
   line-height: 57px;
   color: $color-form-default;
+  @include tablet {
+    font-size: 0.9rem;
+  };
+  @include mobale-section-favorite {
+    line-height: 15px;
+  }
 };
 
 .donate__block-numbers {
   color: $color-header-footer;
   font-size: 7.2rem;
+  @include tablet {
+    font-size: 4.0rem;
+  }
 };
 
 //input
@@ -105,6 +157,10 @@
   font-weight: 400;
   font-size: 1.6rem;
   color: $color-btn-default;
+  @include mobale-small-favorite {
+    min-width: 180px;
+    min-height: 42px;
+  }
 };
 
 input[type="number"]::-webkit-inner-spin-button, 
@@ -165,6 +221,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .donate__button {
   margin: 0 0 30px 0;
+  @include mobale-small-favorite {
+    width: 228px;
+  }
 }
 
 .donate__btn-text {
