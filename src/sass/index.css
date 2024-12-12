@@ -1084,7 +1084,7 @@ input:invalid:placeholder-shown {
 }
 @media (max-width: 1525px) {
   .gallery__btn {
-    top: 42%;
+    top: 35%;
   }
 }
 @media (max-width: 750px) {
