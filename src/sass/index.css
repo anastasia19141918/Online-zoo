@@ -10,21 +10,57 @@
   color: #F9804B;
   transition: 0.3s ease-in-out;
 }
+@media (max-width: 1000px) {
+  .header__link:hover {
+    color: #ffffff;
+  }
+}
 
 .gallery__itemn:hover .gallery__img {
   transform: scale(1.1);
-  transition: 0.3s ease-in-out;
   filter: brightness(25%);
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 1000px) {
+  .gallery__itemn:hover .gallery__img {
+    filter: none;
+    transform: none;
+  }
 }
 
 .gallery__itemn:hover .gallery__desk {
   margin-top: -15%;
   transition: 0.3s ease-in-out;
 }
+@media (max-width: 1525px) {
+  .gallery__itemn:hover .gallery__desk {
+    margin-top: -27%;
+  }
+}
+@media (max-width: 1000px) {
+  .gallery__itemn:hover .gallery__desk {
+    margin-top: none;
+  }
+}
+@media (max-width: 675px) {
+  .gallery__itemn:hover .gallery__desk {
+    margin-top: -23%;
+  }
+}
+@media (max-width: 611px) {
+  .gallery__itemn:hover .gallery__desk {
+    margin-top: -27%;
+  }
+}
 
 .gallery__btn:hover {
   transition: 0.3s ease-in-out;
   background-color: #4B9200;
+}
+@media (max-width: 1000px) {
+  .gallery__btn:hover {
+    background-color: #F9804B;
+  }
 }
 
 .form__btn:hover {
@@ -32,15 +68,31 @@
   color: #4B9200;
   transition: 0.4s ease-in-out;
 }
+@media (max-width: 1000px) {
+  .form__btn:hover {
+    color: #000000;
+    border: none;
+  }
+}
 
 .footer__icon:hover {
   transition: 0.5s ease-in-out;
   background-color: #F9804B;
 }
+@media (max-width: 1000px) {
+  .footer__icon:hover {
+    background-color: #767474;
+  }
+}
 
 .footer__link:hover {
   color: #F9804B;
   transition: 0.5s ease-in-out;
+}
+@media (max-width: 1000px) {
+  .footer__link:hover {
+    color: #ffffff;
+  }
 }
 
 .header {
@@ -168,7 +220,6 @@
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 22px;
-  color: #ffffff;
   color: #000000;
   cursor: pointer;
   border-radius: 5px;
@@ -337,6 +388,7 @@ input:invalid:placeholder-shown {
 @media (max-width: 640px) {
   .header__itemns {
     position: absolute;
+    z-index: 7;
     width: 50%;
     height: 80vh;
     top: 5.5%;
@@ -345,7 +397,7 @@ input:invalid:placeholder-shown {
     flex-direction: column;
     justify-content: center;
     gap: 20px 0;
-    background-color: #ffffff;
+    background-color: #2F76F5;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     transform: translateX(-100%);
@@ -791,7 +843,7 @@ input:invalid:placeholder-shown {
   .gallery__itemns {
     margin: 0 0 26% 0;
     padding: 0 15px;
-    gap: 30% 30px;
+    gap: 10% 30px;
   }
 }
 @media (max-width: 1080px) {
@@ -864,9 +916,40 @@ input:invalid:placeholder-shown {
     padding: 1px 10px 10px 10px;
   }
 }
+@media (max-width: 1525px) {
+  .gallery__desk {
+    padding: 5px 10px 10px 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .gallery__desk {
+    margin-top: -27%;
+  }
+}
+@media (max-width: 675px) {
+  .gallery__desk {
+    margin-top: -23%;
+    align-items: end;
+  }
+}
+@media (max-width: 611px) {
+  .gallery__desk {
+    margin-top: -27%;
+  }
+}
 
 .gallery__inf {
   width: 294px;
+}
+@media (max-width: 1525px) {
+  .gallery__inf {
+    width: 274px;
+  }
+}
+@media (max-width: 1000px) {
+  .gallery__inf {
+    width: 80%;
+  }
 }
 
 .gallery__title {
@@ -876,12 +959,22 @@ input:invalid:placeholder-shown {
   line-height: 22px;
   text-transform: uppercase;
 }
+@media (max-width: 675px) {
+  .gallery__title {
+    font-size: 1.2rem;
+  }
+}
 
 .gallery__text {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 18px;
+}
+@media (max-width: 675px) {
+  .gallery__text {
+    font-size: 1.1rem;
+  }
 }
 
 .gallery__pic {
@@ -894,6 +987,13 @@ input:invalid:placeholder-shown {
 }
 .gallery__pic_fish {
   background-image: url("../../src/img/icon-slaider/meet-fish.svg");
+}
+@media (max-width: 675px) {
+  .gallery__pic {
+    width: 25px;
+    height: 28px;
+    background-size: 25px 28px;
+  }
 }
 
 .gallery__btn {
@@ -985,7 +1085,7 @@ input:invalid:placeholder-shown {
 }
 @media (max-width: 1525px) {
   .gallery__btn {
-    top: 42%;
+    top: 35%;
   }
 }
 @media (max-width: 750px) {
@@ -2045,6 +2145,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 10px;
 }
 

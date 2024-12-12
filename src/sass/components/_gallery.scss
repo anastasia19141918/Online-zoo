@@ -11,7 +11,7 @@
   @include desktop-gallery {
     margin: 0 0 26% 0;
     padding: 0 15px;
-    gap: 30% 30px;
+    gap: 10% 30px;
   };
   @include desktop-big {
     margin: 0 0 10% 0;
@@ -66,11 +66,30 @@
   transition: 0.3s ease-in-out;
   @include desktop-bg {
     padding: 1px 10px 10px 10px;
+  };
+  @include desktop-gallery {
+    padding: 5px 10px 10px 10px;
+  };
+  @include desktop {
+    margin-top: -27%;
+  };
+  @include tablet-big {
+    margin-top: -23%;
+    align-items: end;
+  };
+  @include tablet-small {
+    margin-top: -27%;
   }
 };
 
 .gallery__inf {
   width: 294px;
+  @include desktop-gallery {
+    width: 274px;
+  };
+  @include desktop {
+    width: 80%;
+  }
 }
 
 .gallery__title {
@@ -79,6 +98,9 @@
   font-size: 1.6rem;
   line-height: 22px;
   text-transform: uppercase;
+  @include tablet-big {
+    font-size: 1.2rem;
+  }
 };
 
 .gallery__text {
@@ -86,6 +108,9 @@
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 18px;
+  @include tablet-big {
+    font-size: 1.1rem;
+  }
 };
 
 .gallery__pic {
@@ -97,7 +122,12 @@
   };
   &_fish {
     background-image: url('../../src/img/icon-slaider/meet-fish.svg');
-  }
+  };
+  @include tablet-big {
+    width: 25px;
+    height: 28px;
+    background-size: 25px 28px;
+  };
 };
 
 //gallery btn
@@ -163,7 +193,7 @@
     }
   };
   @include desktop-gallery {
-    top: 42%;
+    top: 35%;
   };
   @include tablet-big-gallery {
     top: 82%;
