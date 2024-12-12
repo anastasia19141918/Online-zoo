@@ -1,36 +1,68 @@
 .header__link:hover {
   color: $color-btn;
   transition: 0.3s ease-in-out;
+  @include desktop {
+    color: $color-nav;
+  }
 };
 
 .gallery__itemn:hover .gallery__img {
   transform: scale(1.1);
+  filter: brightness(25%);
   transition: 0.3s ease-in-out;
-  filter: brightness(25%)
+  @include desktop {
+    filter: none;
+    transform: none;
+  }
 };
 
 .gallery__itemn:hover .gallery__desk {
   margin-top: -15%;
   transition: 0.3s ease-in-out;
+  @include desktop-gallery {
+    margin-top: -27%;
+  };
+  @include desktop {
+    margin-top: none;
+  };
+  @include tablet-big {
+    margin-top: -23%;
+  };
+  @include tablet-small {
+    margin-top: -27%;
+  }
 };
 
 .gallery__btn:hover {
   transition: 0.3s ease-in-out;
   background-color: $color-active-btn;
+  @include desktop {
+    background-color: $color-btn;
+  }
 };
 
 .form__btn:hover {
   border: 2px solid $color-active-btn;
   color: $color-active-btn;
   transition: 0.4s ease-in-out;
+  @include desktop {
+    color: $color-header-footer;
+    border: none;
+  }
 };
 
 .footer__icon:hover {
   transition: 0.5s ease-in-out;
   background-color: $color-btn;
+  @include desktop {
+    background-color: $color-btn-default;
+  }
 };
 
 .footer__link:hover {
   color: $color-btn;
   transition: 0.5s ease-in-out;
+  @include desktop {
+    color: $color-nav;
+  }
 }
