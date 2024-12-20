@@ -1,17 +1,32 @@
 .gallery {
   position: relative;
   padding: 7.4% 0 6.8% 0;
+};
+
+.carousel {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.carousel__itemns {
+  width: 193%;
+  position: relative;
+  display: flex;
+  gap: 0 5%;
+  transition: transform 0.6s ease-in-out;
 }
 
 .gallery__itemns {
+  width: 100%;
   display: grid;
-  margin: 0 0 17% 0;
+  margin: 0 0 15% 0;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px 30px;
+
   @include desktop-gallery {
-    margin: 0 0 26% 0;
+    margin: 0 0 6% 0;
     padding: 0 15px;
-    gap: 10% 30px;
+    gap: 15% 30px;
   };
   @include desktop-big {
     margin: 0 0 10% 0;
@@ -47,6 +62,8 @@
 };
 
 .gallery__img {
+  width: 366px;
+  height: 295px;
   border-radius: 5px;
   transition: 0.3s ease-in-out;
   @include desktop-big {
@@ -57,9 +74,10 @@
 
 .gallery__desk {
   width: 100%;
+  position: absolute;
   margin-top: 0;
   display: flex;
-  position: absolute;
+  
   padding: 10px 10px 10px 10px;
   flex-direction: row;
   background-color: $color-nav;
@@ -83,9 +101,9 @@
 };
 
 .gallery__inf {
-  width: 294px;
+  width: 244px;
   @include desktop-gallery {
-    width: 274px;
+    width: 244px;
   };
   @include desktop {
     width: 80%;
@@ -134,7 +152,7 @@
 
 .gallery__btn {
   position: absolute;
-  top: 38%;
+  top: 39%;
   border-radius: 50%;
   background-color: $color-btn;
   width: 62px;
@@ -150,16 +168,22 @@
       left: 45%;
     };
     @include desktop-big {
-      left: 43%;
+      left: 38%;
     };
     @include desktop-small-gallery {
-      left: 41%;
+      left: 38%;
+    };
+    @include tablet-small-gallery {
+      left: 36%;
     };
     @include tablet-small {
-      left: 10%;
+      left: 2%;
     };
     @include mobale-small-gallery {
-      left: 1%;
+      left: 5%;
+    };
+    @include mobale-btns {
+      left: 30%;
     };
     @include mobale-small-favorite {
       left: 20%;
@@ -174,26 +198,29 @@
       right: 40%;
     };
     @include desktop-big {
-      left: 50%;
+      left: 48%;
     };
     @include desktop-small-gallery {
-      left: 51%;
+      left: 47%;
     };
     @include tablet-small {
       left: 79%;
     };
     @include mobale-small-gallery {
-      left: 85%;
+      left: 81%;
     };
     @include  mobale-gallery {
       left: 92%;
+    };
+    @include mobale-btns {
+      left: 50%;
     };
     @include mobale-small-favorite {
       left: 70%;
     }
   };
   @include desktop-gallery {
-    top: 35%;
+    top: 38%;
   };
   @include tablet-big-gallery {
     top: 82%;
@@ -204,12 +231,15 @@
   @include tablet-small {
     top: 44%;
   };
-  @include  mobale-gallery {
+  @include mobale-small-gallery {
     width: 30px;
     height: 30px;
   };
+  @include mobale-btns {
+    top: 92%;
+  };
   @include mobale-small-favorite {
-    top: 93.5%;
+    
   }
 };
 

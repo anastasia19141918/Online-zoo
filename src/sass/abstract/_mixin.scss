@@ -58,6 +58,10 @@
   @media (max-width: $mobale-small-footer) {@content;}
 };
 
+@mixin mobale-btns {
+  @media (max-width: $mobale-btns) {@content;}
+};
+
 @mixin tablet-big {
   @media (max-width: $tablet-big) {@content;}
 };
