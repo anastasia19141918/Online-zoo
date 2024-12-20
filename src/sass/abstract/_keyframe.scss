@@ -1,0 +1,27 @@
+@keyframes move-left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+};
+
+@keyframes move-right {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+};
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1s;
+};
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1s;
+}
