@@ -1,7 +1,7 @@
 const galleryItemnsBlock = document.querySelector('.gallery__itemns');
 
 export default function creatItemns (el) {
-
+  
   el.forEach(function(itemn) {
     const div = document.createElement('div');
     div.classList.add('gallery__itemn');
