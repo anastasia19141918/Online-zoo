@@ -13,6 +13,14 @@
   position: relative;
   display: flex;
   gap: 0 5%;
+  @include desktop {
+    width: 210%;
+    gap: 0 2%;
+  };
+  @include mobale-section-favorite {
+    width: 200%;
+    
+  }
 };
 
 .gallery__itemns {
@@ -33,15 +41,17 @@
     justify-content: center;
     gap: 5% 20%;
   };
+  @include desktop {
+    gap: 5% 5%;
+    grid-template-columns: repeat(2, 0.1fr);
+  }
   @include tablet-big-gallery {
     margin: 0 0 15% 0;
     gap: 5% 5%;
   };
   @include tablet-big {
-    gap: 2% 2%;
-  };
-  @include tablet-small {
     grid-template-columns: repeat(1, 0.3fr);
+    gap: 2% 2%;
   };
   @include mobale-small-favorite {
     margin: 0 0 25% 0;
@@ -91,7 +101,7 @@
     margin-top: -27%;
   };
   @include tablet-big {
-    margin-top: -23%;
+    margin-top: -29%;
     align-items: end;
   };
   @include tablet-small {
@@ -167,26 +177,9 @@
       left: 45%;
     };
     @include desktop-big {
-      left: 38%;
+      left: 1%;
     };
-    @include desktop-small-gallery {
-      left: 38%;
-    };
-    @include tablet-small-gallery {
-      left: 36%;
-    };
-    @include tablet-small {
-      left: 2%;
-    };
-    @include mobale-small-gallery {
-      left: 5%;
-    };
-    @include mobale-btns {
-      left: 30%;
-    };
-    @include mobale-small-favorite {
-      left: 20%;
-    }
+    
   };
   &_right {
     right: 9%;
@@ -197,48 +190,14 @@
       right: 40%;
     };
     @include desktop-big {
-      left: 48%;
+      left: 85%;
     };
-    @include desktop-small-gallery {
-      left: 47%;
-    };
-    @include tablet-small {
-      left: 79%;
-    };
-    @include mobale-small-gallery {
-      left: 81%;
-    };
-    @include  mobale-gallery {
-      left: 92%;
-    };
-    @include mobale-btns {
-      left: 50%;
-    };
-    @include mobale-small-favorite {
-      left: 70%;
-    }
   };
   @include desktop-gallery {
     top: 38%;
   };
-  @include tablet-big-gallery {
-    top: 82%;
-  };
-  @include tablet-small-gallery {
-    top: 84%;
-  };
-  @include tablet-small {
-    top: 44%;
-  };
-  @include mobale-small-gallery {
-    width: 30px;
-    height: 30px;
-  };
-  @include mobale-btns {
-    top: 92%;
-  };
-  @include mobale-small-favorite {
-    
+  @include desktop {
+    display: none;
   }
 };
 

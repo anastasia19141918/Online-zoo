@@ -48,6 +48,91 @@ function newArr(data) {
   creatItemns (newItemns);
 };
 
+const swipedetect = (el) => {
+  let surface = el;
+  let startX = 0;
+  let startY = 0;
+  let distX = 0;
+  let distY = 0;
+  let startTime = 0;
+  let elapsedTime = 0;
+
+  let threshold = 150;
+  let restraint = 100;
+  let allowedTime = 300;
+
+  surface.addEventListener('mousedown', function(e){
+    startX = e.pageX;
+    startY = e.pageY;
+    startTime = new Date().getTime();
+    e.preventDefault();
+    
+  }, false);
+  
+  surface.addEventListener('mouseup', function(e){
+    distX = e.pageX - startX;
+    distY = e.pageY - startY;
+    elapsedTime = new Date().getTime() - startTime;
+    if(elapsedTime <= allowedTime) {
+      if(Math.abs(distX) >= threshold && Math.abs(distY) <= restraint) {
+        if((distX > 0)) {
+          
+          moveRight ();
+        }
+        else {
+          moveLeft ();
+        }
+      }
+    }
+    e.preventDefault();
+  }, false);
+
+  surface.addEventListener ('touchstart', function (e){
+    if(e.target.classList.contains('gallery__btn')) {
+      if(e.target.classList.contains('gallery__btn_left')) {
+        moveLeft ();
+      };
+      if(e.target.classList.contains('gallery__btn_right')) {
+        moveRight ();
+      };
+    };
+    
+    let touchItemn = e.changedTouches[0];
+    startX = touchItemn.pageX;
+    startY = touchItemn.pageY;
+    startTime = new Date().getTime();
+    e.preventDefault();
+  }, false);
+
+
+  surface.addEventListener('touchmove', function(e){
+    e.preventDefault();
+  }, false);
+  
+  
+  surface.addEventListener('touchend', function(e){
+    let touchItemn = e.changedTouches[0];
+    distX = touchItemn.pageX - startX;
+    distY = touchItemn.pageY - startY;
+    elapsedTime = new Date().getTime() - startTime;
+    if(elapsedTime <= allowedTime) {
+    distX = touchItemn.pageX - startX;
+      if(Math.abs(distX) >= threshold && Math.abs(distY) <= restraint) {
+        if((distX > 0)) {
+          moveRight ();
+        }
+        else {
+          moveLeft ();
+        }
+      }
+    }
+    e.preventDefault();
+  }, false)
+
+};
+
+const el = document.getElementById('carousel__itemns');
+swipedetect(el);
 
 
 
