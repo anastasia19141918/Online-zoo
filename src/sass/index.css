@@ -1410,10 +1410,12 @@ input:invalid:placeholder-shown {
 }
 
 .testimonials__itemns {
+  max-width: 100%;
   display: flex;
   margin-bottom: 25px;
   gap: 0 10px;
   justify-content: space-between;
+  transition: transform 0.5s ease-in-out;
 }
 @media (max-width: 1115px) {
   .testimonials__itemns {

@@ -15,6 +15,7 @@
 
 .testimonials__content {
  overflow-x: hidden;
+
  @include desktop-pay-small {
   width: 69%;
   margin-left: 15%;
@@ -37,10 +38,13 @@
 }
 
 .testimonials__itemns {
+  max-width: 100%;
   display: flex;
   margin-bottom: 25px;
   gap: 0 10px;
   justify-content: space-between;
+
+  transition: transform 0.5s ease-in-out;
   @include desktop-testimonials-small {
     flex-direction: column;
     gap: 20px 0px;
