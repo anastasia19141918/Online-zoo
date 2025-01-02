@@ -179,6 +179,21 @@
   background-position: center;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  @include desktop-small-gallery {
+    left: -2.2rem;
+  };
+  @include tablet {
+    left: -3.4rem;
+  };
+  @include mobale-footer {
+    left: -2.9rem;
+  };
+  @include mobale-gallery {
+    left: -2.7rem;
+  };
+  @include mobale-section-favorite {
+    left: -2.4rem;
+  }
 }
 
 .input__label::after {

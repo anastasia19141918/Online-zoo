@@ -2084,6 +2084,31 @@ input[type=number]::-webkit-outer-spin-button {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
+@media (max-width: 940px) {
+  .input__radio:checked + .input__label::before {
+    left: -2.2rem;
+  }
+}
+@media (max-width: 640px) {
+  .input__radio:checked + .input__label::before {
+    left: -3.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .input__radio:checked + .input__label::before {
+    left: -2.9rem;
+  }
+}
+@media (max-width: 440px) {
+  .input__radio:checked + .input__label::before {
+    left: -2.7rem;
+  }
+}
+@media (max-width: 360px) {
+  .input__radio:checked + .input__label::before {
+    left: -2.4rem;
+  }
+}
 
 .input__label::after {
   content: "";

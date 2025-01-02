@@ -5,5 +5,4 @@ inputNumber.forEach(function(el){
   el.addEventListener('click', function(){
     formInput.value = el.value;
   })
-  
 })
